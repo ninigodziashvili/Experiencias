@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <nav></nav>
+    <nav class="nav flex justify-between p-4 w-full h-[6em] bg-white fixed top-0">
+        <div class="img-cont">
+            <img class="w-[4.5em] lg:hidden" src="img/volkswagen-icon.svg" alt="">
+            <img class="w-36 hidden lg:block" src="img/volkswagen-logo.svg" alt="">
+        </div>
+        <div class="menu-cont flex flex-col justify-center p-2 rounded-md hover:bg-slate-100 lg:hidden">
+            <div class="border-b-2 w-12 border-gray-500 rounded-lg my-[10%]"></div>
+            <div class="border-b-2 w-12 border-gray-500 rounded-lg my-[10%]"></div>
+            <div class="border-b-2 w-12 border-gray-500 rounded-lg my-[10%]"></div>
+        </div>
+        <div class="menu-lg hidden lg:block">
+            <ul class="flex items-center h-[100%]">
+                <li class="mx-3 border-b-2 border-white hover:border-gray-500 active:text-blue-800 active:border-blue-800 "><a href="#">Volkswagen</a></li>
+                <li class="mx-3 border-b-2 border-white hover:border-gray-500 active:text-blue-800 active:border-blue-800"><a href="#">Por qué VW</a></li>
+                <li class="mx-3 border-b-2 border-white hover:border-gray-500 active:text-blue-800 active:border-blue-800"><a href="#">Testimonios</a></li>
+                <li class="mx-3 border-b-2 border-white hover:border-gray-500 active:text-blue-800 active:border-blue-800"><a href="#">Testimonios</a></li>
+                <li class="mx-3 border-b-2 border-white hover:border-gray-500 active:text-blue-800 active:border-blue-800"><a href="#">FAQ</a></li>
+                <li class="mx-3 border-b-2 border-white hover:border-gray-500 active:text-blue-800 active:border-blue-800"><a href="#">Portfolio</a></li>
+                <li class="mx-3 border-b-2 border-white hover:border-gray-500 active:text-blue-800 active:border-blue-800"><a href="#">Gama</a></li>
+                <li class="mx-3 border-b-2 border-white hover:border-gray-500 active:text-blue-800 active:border-blue-800"><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
     <header></header>
     <main>
         <section></section>
