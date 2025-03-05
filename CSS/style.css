@@ -2,9 +2,44 @@
     padding: 0;
     margin: 0;
 }
-.caja{
-    width: 20em;
-    height: 20em;
-    background-color: red;
-    
+
+.contenedor {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60em;
+}
+
+.carrusel-container {
+    width: 100%;
+    overflow: hidden;
+    background: white;
+    position: relative;
+    display: flex;
+}
+
+.carrusel {
+    display: flex;
+    width: 700%;
+    /* Doble del ancho para el efecto de loop */
+    animation: desplazar 15s linear infinite;
+}
+
+.carrusel img {
+    height: 60em;
+    /* Ajusta el tamaño de las imágenes */
+    margin-right: 0px;
+    /* Espacio entre imágenes */
+}
+
+@keyframes desplazar {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-80%);
+    }
 }
