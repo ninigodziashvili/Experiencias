@@ -148,7 +148,7 @@ h3 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(249, 244, 244, 0.809);
     z-index: 1;
 }
 
@@ -166,11 +166,21 @@ h3 {
     position: relative;
 }
 
+.planes-subtitulo {
+    font-size: 20px;
+    margin-top: -10px;
+    z-index: 3;
+    position: relative;
+    max-width: 65em;
+    margin-left: 3em;
+}
+
 .planes p {
     font-size: 20px;
     margin-top: -10px;
     z-index: 3;
     position: relative;
+    max-width: 65em;
 }
 
 .cards-container {
@@ -234,9 +244,9 @@ h3 {
     max-height: 60em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 748px) {
     .img-container {
-        height: 65em; 
+        height: 80em; 
         background-image: url('../img/tropical-view-from-under-a-palm-tree.jpg');
     }
 
@@ -247,6 +257,9 @@ h3 {
     .planes p {
         font-size: 18px;
         margin-top: 0;
+        max-width: 30em;
+        overflow: scroll;
+        margin: 1em;
     }
 
     .cards-container {
@@ -263,7 +276,7 @@ h3 {
 
 @media (max-width: 480px) {
     .img-container {
-        height: 57em;
+        height: 60em;
         width: 100%;
         background-image: url('../img/tropical-view-from-under-a-palm-tree.jpg');
     }
@@ -274,6 +287,7 @@ h3 {
 
     .planes p {
         font-size: 14px;
+        margin: 1em;
     }
 
     .cards-container {
