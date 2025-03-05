@@ -5,12 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./CSS/style.css">
-
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../Experiencia/CSS/style.css">
 </head>
-<body>
 
-    <nav></nav>
+<body>
+    <!-- este es el menu navegacion orientado tambnien a moviles -->
+    <nav class="menu-navegacion flex justify-end items-center te p-4 w-full h-[6em] bg-blue-300 fixed top-0">
+        
+        <div class="menu-normal flex flex-col justify-center p-2 rounded-md hover:bg-slate-100 lg:hidden">
+            <div class="border-b-2 w-12 border-gray-500 rounded-lg my-[10%]"></div>
+            <div class="border-b-2 w-12 border-gray-500 rounded-lg my-[10%]"></div>
+            <div class="border-b-2 w-12 border-gray-500 rounded-lg my-[10%]"></div>
+        </div>
+        <div class="menu-moviles hidden lg:block">
+            <ul class="flex items-center h-[100%]">
+                <li class="mx-3 border-b-2 hover:border-gray-500"><a href="#inicio">inicio</a></li>
+                <li class="mx-3 border-b-2 hover:border-gray-500"><a href="#sobre nosotros">Sobre nosotros</a></li>
+                <li class="mx-3 border-b-2 hover:border-gray-500"><a href="#viajes">viajes</a></li>
+                <li class="mx-3 border-b-2 hover:border-gray-500"><a href="#contacto">contacto</a></li>
+        </div>
+    </nav>
     <header></header>
     <main>
         <section>
@@ -36,6 +52,37 @@
 
                 </div>
             </div>
+            </div>
+        <section></section>
+        <section class="planes">
+            <div class="img-container">
+                <h1>Elige tu forma de viajar al Caribe</h1>
+                <p>Te ofrecemos varias opciones de viajes para que disfrutes de una experiencia única y personalizada,
+                    con multitud de servicios y experiencias en destinos. ¡Prepárate para viajar al Caribe!</p>
+                    <section class="cards-container">
+                        <div class="card">
+                            <div class="card-icon">
+                                <img src="../Experiencia/img/istockphoto-1250567992-612x612.jpg" alt="Plan Básico">
+                            </div>
+                            <h2>Basico</h2>
+                            <p>Máxima calidad al mejor precio en tus viajes al Caribe</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">
+                                <img src="../Experiencia/img/palm-trees-on-white-beach.jpg" alt="Plan Estandard">
+                            </div>
+                            <h2>Estandard</h2>
+                            <p>Disfruta de una experiencia de calidad superior con servicios extras que harán que tu viaje sea
+                                más confortable.</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">
+                                <img src="../Experiencia/img/11.jpg" alt="Plan VIP">
+                            </div>
+                            <h2>VIP</h2>
+                            <p>Disfruta de una experiencia única con todas las ventajas y comodidades.</p>
+                        </div>
+                    </section>
             </div>
         </section>
     </main>
