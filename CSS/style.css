@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
@@ -22,7 +22,7 @@
 
 .carrusel {
     display: flex;
-    width: 700%;
+    width: 600%;
     /* Doble del ancho para el efecto de loop */
     animation: desplazar 15s linear infinite;
 }
@@ -34,6 +34,70 @@
     /* Espacio entre imágenes */
 }
 
+.contenedorGris {
+    position: absolute;
+    width: 70em;
+    height: 14em;
+    border-radius: 250px;
+    background-color: lightslategray;
+    opacity: 0.8;
+    left: 50em;
+    top: 45em;
+}
+
+
+
+
+
+.inputBody {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.search-box {
+    left: 34em;
+    position: relative;
+    width: 300px;
+    top: 2em;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 17px 75px 11px 120px;
+    font-size: 30px;
+    border: 3px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-box input:focus {
+    border-color: #007bff;
+}
+
+.search-box .search-icon {
+    position: absolute;
+    top: 30%;
+    right: 10px;
+    transform: translateX(517%);
+    width: 30px;
+    height: 30px;
+    background: url('https://cdn-icons-png.flaticon.com/512/622/622669.png') no-repeat center;
+    background-size: cover;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
 @keyframes desplazar {
     from {
         transform: translateX(0);
@@ -42,4 +106,6 @@
     to {
         transform: translateX(-80%);
     }
+
+
 }
