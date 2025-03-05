@@ -133,7 +133,7 @@ h3 {
 }
 
 .img-container {
-    height: 500px;
+    height: 550px;
     background-image: url('../img/tropical-view-from-under-a-palm-tree.jpg');
     background-size: cover;
     background-position: center;
@@ -156,7 +156,7 @@ h3 {
     position: relative;
     text-align: center;
     z-index: 2;
-    color: #00285b;
+    color: var(--primary-color);
     margin-bottom: 3em;
 }
 
@@ -194,7 +194,7 @@ h3 {
 }
 
 .card {
-    background-color: #fff;
+    background-color: var(--background-color);
     border-radius: 10px;
     padding: 20px;
     width: 300px;
@@ -215,7 +215,7 @@ h3 {
     height: 60px;
     border-radius: 50%;
     overflow: hidden;
-    background-color: #222;
+    background-color: var(--text-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -245,9 +245,61 @@ h3 {
     max-height: 60em;
 }
 
-@media (max-width: 748px) {
+footer {
+    height: 20em;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 100px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.footer-link img {
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.footer-container {
+    margin-top: 1em;
+    padding: 1.5em;
+}
+
+.footer-container h1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--background-color)
+}
+
+.link-menu h2 {
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--background-color);
+    margin-bottom: 1em;
+}
+
+.footer-container p {
+    color: var(--background-color);
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
     .img-container {
-        height: 80em; 
+        height: 60em; 
         background-image: url('../img/tropical-view-from-under-a-palm-tree.jpg');
     }
 
@@ -258,14 +310,20 @@ h3 {
     .planes p {
         font-size: 18px;
         margin-top: 0;
-        max-width: 30em;
+        max-width: 50em;
         overflow: scroll;
         margin: 1em;
     }
 
+    .planes-subtitulo {
+        font-size: 18px;
+        margin-top: 0;
+        margin-left: 9em;
+    }
+
     .cards-container {
         gap: 50px;
-        margin-top: 50px;
+        margin-top: 40px;
         flex-wrap: wrap;
     }
 
@@ -273,9 +331,38 @@ h3 {
         width: 250px;
         height: auto;
     }
+
+    footer {
+        flex-direction: row;
+        gap: 50px;
+        padding: 1.5em;
+        justify-content: space-around;
+    }
+
+    .footer-container, .link-menu {
+        max-width: 300px;
+    }
+
+    .footer-container h1 {
+        font-size: 30px;
+    }
+
+    .link-menu h2 {
+        font-size: 22px;
+    }
+
+    .footer-container p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .footer-link img {
+        height: 2em;
+        width: 2em;
+    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .img-container {
         height: 60em;
         width: 100%;
@@ -298,5 +385,41 @@ h3 {
 
     .card {
         width: 200px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        padding: 2em;
+        height: auto;
+    }
+
+    .footer-container, .link-menu {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .footer-container h1 {
+        font-size: 25px;
+    }
+
+    .link-menu h2 {
+        font-size: 20px;
+    }
+
+    .footer-container p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-link img {
+        height: 1.8em;
+        width: 1.8em;
     }
 }
