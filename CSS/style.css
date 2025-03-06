@@ -6,10 +6,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap');
 
 :root {
-    --primary-color: #002244;  /* Azul Marino */
-    --secondary-color: #D4AF37; /* Dorado */
-    --background-color: #FFFFFF; /* Blanco */
-    --text-color: #333333; /* Gris oscuro para mejor lectura */
+    --primary-color: #002244;
+    /* Azul Marino */
+    --secondary-color: #D4AF37;
+    /* Dorado */
+    --background-color: #FFFFFF;
+    /* Blanco */
+    --text-color: #333333;
+    /* Gris oscuro para mejor lectura */
 }
 
 body {
@@ -20,7 +24,9 @@ body {
     padding: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Playfair Display', serif;
     color: var(--primary-color);
 }
@@ -71,13 +77,19 @@ h3 {
 
 .contenedorGris {
     position: absolute;
-    width: 70em;
-    height: 14em;
+    width: 59em;
+    height: 10em;
     border-radius: 250px;
     background-color: lightslategray;
     opacity: 0.8;
     left: 50em;
-    top: 45em;
+    top: 49em;
+}
+
+.letras {
+    margin-top: 1.5em;
+    margin-left: 3em;
+    font-size: 25px;
 }
 
 .inputBody {
@@ -92,8 +104,8 @@ h3 {
 .search-box {
     left: 34em;
     position: relative;
-    width: 300px;
-    top: -10em;
+    width: 20em;
+    top: -5em;
 }
 
 .search-box input {
@@ -112,8 +124,8 @@ h3 {
 
 .search-box .search-icon {
     position: absolute;
-    top: 30%;
-    right: 10px;
+    top: 36%;
+    right: 171px;
     transform: translateX(517%);
     width: 30px;
     height: 30px;
@@ -298,8 +310,119 @@ footer ul {
 }
 
 @media (max-width: 800px) {
+
+
+    .contenedor {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30em;
+    }
+    
+    .carrusel-container {
+        width: 100%;
+        overflow: hidden;
+        background: white;
+        position: relative;
+        display: flex;
+        margin-top: 6em;
+    }
+    
+    .carrusel {
+        display: flex;
+        width: 600%;
+        animation: desplazar 15s linear infinite;
+    }
+    
+    .carrusel img {
+        height: 30em;
+        margin-right: 0px;
+    }
+
+
+
+    .contenedorGris {
+        position: absolute;
+        width: 23em;
+        height: 5em;
+        border-radius: 250px;
+        background-color: lightslategray;
+        opacity: 0.8;
+        left: 0em;
+        top: 24em;
+    }
+    
+    .letras {
+        margin-top: 2.5em;
+        margin-left: 2em;
+        font-size: 12px;
+    }
+    
+    .inputBody {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+    }
+    
+    .search-box {
+        left: 10em;
+        position: relative;
+        width: 10em;
+        top: -3em;
+    }
+    
+    .search-box input {
+        width: 100%;
+        padding: 0px 60px 0px 120px;;
+        font-size: 30px;
+        border: 3px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+        transition: 0.3s;
+    }
+    
+    .search-box input:focus {
+        border-color: #007bff;
+    }
+    
+    .search-box .search-icon {
+        position: absolute;
+        top: 21%;
+        right: 144px;
+        transform: translateX(517%);
+        width: 30px;
+        height: 30px;
+        background: url('https://cdn-icons-png.flaticon.com/512/622/622669.png') no-repeat center;
+        background-size: cover;
+        pointer-events: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .img-container {
-        height: 60em; 
+        height: 60em;
         background-image: url('../img/tropical-view-from-under-a-palm-tree.jpg');
     }
 
@@ -339,7 +462,8 @@ footer ul {
         justify-content: space-around;
     }
 
-    .footer-container, .link-menu {
+    .footer-container,
+    .link-menu {
         max-width: 300px;
     }
 
@@ -396,7 +520,8 @@ footer ul {
         height: auto;
     }
 
-    .footer-container, .link-menu {
+    .footer-container,
+    .link-menu {
         width: 100%;
         max-width: 100%;
     }

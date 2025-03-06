@@ -7,19 +7,19 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Inicio</title>
-    <link rel="stylesheet" href="../Experiencias/CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
 <body>
     <nav class="menu-navegacion flex justify-end items-center te p-4 w-full h-[6em] fixed top-0 text-white z-10"
         style="background-color: #002244;">
 
-        <div class="menu-normal flex flex-col justify-center p-2 rounded-md hover:bg-slate-100 lg:hidden">
+        <div class="flex flex-col justify-center p-2 rounded-md menu-normal hover:bg-slate-100 lg:hidden">
             <div class="border-b-2 w-12 border-gray-500 rounded-lg my-[10%]"></div>
             <div class="border-b-2 w-12 border-gray-500 rounded-lg my-[10%]"></div>
             <div class="border-b-2 w-12 border-gray-500 rounded-lg my-[10%]"></div>
         </div>
-        <div class="menu-moviles hidden lg:block">
+        <div class="hidden menu-moviles lg:block">
             <ul class="flex items-center h-[100%]">
                 <li class="mx-3 border-b-2 hover:border-gray-500"><a href="#inicio">Inicio</a></li>
                 <li class="mx-3 border-b-2 hover:border-gray-500"><a href="#sobre nosotros">Sobre nosotros</a></li>
@@ -32,15 +32,15 @@
         <section>
             <div class="carrusel-container">
                 <div class="contenedor carrusel">
-                    <img src="../Experiencias/img/chica.png" alt="Imagen 1">
-                    <img src="../Experiencias/img/chica.png" alt="Imagen 1">
-                    <img src="../Experiencias/img/image.png" alt="Imagen 1">
-                    <img src="../Experiencias/img/chica.png" alt="Imagen 1">
-                    <img src="../Experiencias/img/image.png" alt="Imagen 1">
+                    <img src="../img/chica.png" alt="Imagen 1">
+                    <img src="../img/chica.png" alt="Imagen 1">
+                    <img src="../img/image.png" alt="Imagen 1">
+                    <img src="../img/chica.png" alt="Imagen 1">
+                    <img src="../img/image.png" alt="Imagen 1">
 
                 </div>
                 <div class="contenedorGris">
-                    <div style="margin: 6em;">
+                    <div class="letras">
                         <h1>Viajes a destinos exóticos</h1>
                         <h2> ¡Descubre nuevos paraísos!</h2>
                     </div>
@@ -61,7 +61,7 @@
                     <img class="w-[5em] rounded-full border-4 border-gray-300" src="img/canarias.jpg"
                         alt="islas canarias">
                     <div class="px-[3em]">
-                        <h2 class="font-bold text-xl">Las Canarias</h2>
+                        <h2 class="text-xl font-bold">Las Canarias</h2>
                         <p>Desde 998€</p>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                     class="cancun flex p-[1em] items-center transition-transform duration-[0.3s] ease-in-out hover:-translate-y-1 hover:scale-89 hover:shadow-lg rounded-lg">
                     <img class="w-[5em] rounded-full border-4 border-gray-300" src="img/cancun.jpg" alt="cancun">
                     <div class="px-[3em]">
-                        <h2 class="font-bold text-xl">Cancún</h2>
+                        <h2 class="text-xl font-bold">Cancún</h2>
                         <p>Desde 1.274€</p>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
                     class="habana flex p-[1em] items-center transition-transform duration-[0.3s] ease-in-out hover:-translate-y-1 hover:scale-89 hover:shadow-lg rounded-lg">
                     <img class="w-[5em] rounded-full border-4 border-gray-300" src="img/habana.jpg" alt="la habana">
                     <div class="px-[3em]">
-                        <h2 class="font-bold text-xl">La Habana</h2>
+                        <h2 class="text-xl font-bold">La Habana</h2>
                         <p>Desde 1.274€</p>
                     </div>
                 </div>
@@ -92,7 +92,7 @@
                     class="argentina flex p-[1em] items-center transition-transform duration-[0.3s] ease-in-out hover:-translate-y-1 hover:scale-89 hover:shadow-lg rounded-lg">
                     <img class="w-[5em] rounded-full border-4 border-gray-300" src="img/argentina.jpg" alt="argentina">
                     <div class="px-[3em]">
-                        <h2 class="font-bold text-xl">Argentina</h2>
+                        <h2 class="text-xl font-bold">Argentina</h2>
                         <p>Desde 6.795€</p>
                     </div>
                 </div>
@@ -108,14 +108,14 @@
                 <section class="cards-container">
                     <div class="card">
                         <div class="card-icon">
-                            <img src="../Experiencias/img/12.jpg" alt="Plan Básico">
+                            <img src="../img/12.jpg" alt="Plan Básico">
                         </div>
                         <h2>Basico</h2>
                         <p>Máxima calidad al mejor precio en tus viajes al Caribe</p>
                     </div>
                     <div class="card">
                         <div class="card-icon">
-                            <img src="../Experiencias/img/14.jpg" alt="Plan Estandard">
+                            <img src="../img/14.jpg" alt="Plan Estandard">
                         </div>
                         <h2>Estandard</h2>
                         <p>Disfruta de una experiencia de calidad superior con servicios extras que harán que tu
@@ -124,7 +124,7 @@
                     </div>
                     <div class="card">
                         <div class="card-icon">
-                            <img src="../Experiencias/img/11.jpg" alt="Plan VIP">
+                            <img src="../img/11.jpg" alt="Plan VIP">
                         </div>
                         <h2>VIP</h2>
                         <p>Disfruta de una experiencia única con todas las ventajas y comodidades.</p>
@@ -140,10 +140,10 @@
             <p>Para gestión de reservas, llámanos al 910 013 800 o escríbenos a booking@azulmarino.com</p>
             <p>Te atenderemos de lunes a viernes de 09:00h a 19:00h</p>
             <ul class="footer-social">
-                <li><a href="#" class="footer-link"><img src="../EguzkiBerri/img/Group 10.png" alt="Facebook"></a></li>
-                <li><a href="#" class="footer-link"><img src="../EguzkiBerri/img/Group 11.png" alt="Instagram"></a></li>
-                <li><a href="#" class="footer-link"><img src="../EguzkiBerri/img/Group 12.png" alt="Twiter"></a></li>
-                <li><a href="#" class="footer-link"><img src="../EguzkiBerri/img/Group 13.png" alt="LinkedIn"></a></li>
+                <li><a href="#" class="footer-link"><img src="../img/Group 10.png" alt="Facebook"></a></li>
+                <li><a href="#" class="footer-link"><img src="../img/Group 11.png" alt="Instagram"></a></li>
+                <li><a href="#" class="footer-link"><img src="../img/Group 12.png" alt="Twiter"></a></li>
+                <li><a href="#" class="footer-link"><img src="../img/Group 13.png" alt="LinkedIn"></a></li>
             </ul>
         </div>
         <div class="link-menu">
