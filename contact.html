@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../Experiencias/CSS/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Inicio</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
     <nav class="menu-navegacion flex justify-end items-center te p-4 w-full h-[6em] fixed top-0 text-white z-10"
-    style="background-color: #002244;">
+        style="background-color: #002244;">
 
         <div class="menu-normal flex flex-col justify-center p-2 rounded-md hover:bg-slate-100 lg:hidden">
             <div class="border-b-2 w-12 border-gray-500 rounded-lg my-[10%]"></div>
@@ -20,15 +22,66 @@
         <div class="menu-moviles hidden lg:block">
             <ul class="flex items-center h-[100%]">
                 <li class="mx-3 border-b-2 hover:border-gray-500"><a href="index.html">Inicio</a></li>
-                <li class="mx-3 border-b-2 hover:border-gray-500"><a href="about.html">Sobre nosotros</a></li>
+                <li class="mx-3 border-b-2 hover:border-gray-500"><a href="#sobre nosotros">Sobre nosotros</a></li>
                 <li class="mx-3 border-b-2 hover:border-gray-500"><a href="#viajes">Viajes</a></li>
-                <li class="mx-3 border-b-2 hover:border-gray-500"><a href="#contacto">Contacto</a></li>
+                <li class="mx-3 border-b-2 hover:border-gray-500"><a href="contact.html">Contacto</a></li>
         </div>
     </nav>
-    <header></header>
-    <main>
-        <section></section>
+
+    <main class="lg:mx-[15em]">
+        <section class="mt-[8em] p-[2em]">
+            <h1 class="font-bold text-3xl my-[1em]">Contacta con nosotros</h1>
+            <p class="text-xl">Reserva tu viaje en nuestra página web o ponte en contacto con nosotros para que te
+                atendamos
+                personalmente. Completa el siguiente formulario seleccionando desde qué agencia de viajes quieres que te
+                contacten (tenemos más de 200 repartidas por España).
+                Si lo prefieres, puedes llamarnos al teléfono gratuito: 123.456.789</p>
+            <p class="text-xl my-[1em]">¡Contáctanos!</p>
+        </section>
+
+        <form class="grid md:grid-cols-2 lg:grid-cols-3 p-[1em]" action="">
+            <input type="text" placeholder="Nombre *"
+                class="bg-gray-100 border-2 border-gray-300 rounded-xl p-[1em] m-[0.5em]">
+            <input type="text" placeholder="Apellido *"
+                class="bg-gray-100 border-2 border-gray-300 rounded-xl p-[1em] m-[0.5em]">
+            <input type="text" placeholder="Email *"
+                class="bg-gray-100 border-2 border-gray-300 rounded-xl p-[1em] m-[0.5em]">
+            <input type="text" placeholder="Teléfono de contacto *"
+                class="bg-gray-100 border-2 border-gray-300 rounded-xl p-[1em] m-[0.5em]">
+            <textarea
+                class="bg-gray-100 border-2 border-gray-300 rounded-xl p-[1em] m-[0.5em] md:col-span-2 lg:col-span-3"
+                placeholder="¿En qué podemos ayudarte? *" name="" id=""></textarea>
+        </form>
+        <div class="flex mx-[2em]">
+            <input type="checkbox">
+            <p class="mx-[0.5em] font-bold text-lg">Acepto la <span class="text-blue-500">Política de privacidad</span>
+            </p>
+        </div>
+        <div class="flex mx-[2em]">
+            <input type="checkbox">
+            <p class="mx-[0.5em] font-bold text-lg">Quiero mantenerme informado sobre las novedades</span></p>
+        </div>
+
+        <input
+            class="bg-gray-100 border-2 border-gray-300 rounded-xl p-[1em] m-[1em] w-[8em] cursor-pointer hover:bg-slate-300"
+            type="submit">
+
+        <section class="mt-[2em] p-[2em]">
+            <h1 class="font-bold text-3xl my-[1em]">¡Visita nuestras tiendas!</h1>
+            <p class="text-xl">En azulmarino contamos con una amplia red de agencias en toda España con un equipo de
+                profesionales experto en viajes dispuesto a asesorarte en función de tus necesidades. ¡Disfruta de un
+                recorrido virtual por nuestras agencias!</p>
+            <div class="w-[100%] m-[4em] flex justify-center items-center">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11697.281695399884!2d-2.7005610302246223!3d42.86608059999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4fc22e9cf30759%3A0x5d017441f1273749!2sViajes%20El%20Corte%20Ingl%C3%A9s!5e0!3m2!1ses!2ses!4v1741255135901!5m2!1ses!2ses"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </section>
+
     </main>
+
     <footer class="footer">
         <div class="footer-container">
             <h1>Viajes</h1>
@@ -36,10 +89,10 @@
             <p>Para gestión de reservas, llámanos al 910 013 800 o escríbenos a booking@azulmarino.com</p>
             <p>Te atenderemos de lunes a viernes de 09:00h a 19:00h</p>
             <ul class="footer-social">
-                <li><a href="#" class="footer-link"><img src="../Experiencias/img/Group 10.png" alt="Facebook"></a></li>
-                <li><a href="#" class="footer-link"><img src="../Experiencias/img/Group 11.png" alt="Instagram"></a></li>
-                <li><a href="#" class="footer-link"><img src="../Experiencias/img/Group 12.png" alt="Twiter"></a></li>
-                <li><a href="#" class="footer-link"><img src="../Experiencias/img/Group 13.png" alt="LinkedIn"></a></li>
+                <li><a href="#" class="footer-link"><img src="img/Group 10.png" alt="Facebook"></a></li>
+                <li><a href="#" class="footer-link"><img src="img/Group 11.png" alt="Instagram"></a></li>
+                <li><a href="#" class="footer-link"><img src="img/Group 12.png" alt="Twiter"></a></li>
+                <li><a href="#" class="footer-link"><img src="img/Group 13.png" alt="LinkedIn"></a></li>
             </ul>
         </div>
         <div class="link-menu">
